@@ -1,1 +1,1 @@
-Fancy Index with Nginx
+Fancy Index with nginx
