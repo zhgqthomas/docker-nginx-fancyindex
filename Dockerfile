@@ -4,7 +4,7 @@ LABEL maintainer="Thomas <zhgqthomas@gmail.com>"
 
 ENV NGINX_VERSION 1.12.2
 
-COPY ngx-fancyindex /ngx-fancyindex/
+COPY ngx-fancyindex /ngx-fancyindex
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY fastcgi.conf /etc/nginx/fastcgi.conf
 COPY nginx.vh.default.conf /etc/nginx/conf.d/default.conf
