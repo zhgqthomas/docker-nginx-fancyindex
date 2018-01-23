@@ -4,14 +4,14 @@ LABEL maintainer="Thomas <zhgqthomas@gmail.com>"
 
 ENV NGINX_VERSION 1.12.2
 
-COPY ngx-fancyindex/* /ngx-fancyindex
+COPY ngx-fancyindex /ngx-fancyindex
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY fastcgi.conf /etc/nginx/fastcgi.conf
 COPY nginx.vh.default.conf /etc/nginx/conf.d/default.conf
 
 RUN GPG_KEYS=B0F4253373F8F6F510D42178520A9993A1C052F8 \
 	&& CONFIG="\
-		--add-module=ngx-fancyindex \
+		--add-module=/ngx-fancyindex \
 		--prefix=/etc/nginx \
 		--sbin-path=/usr/sbin/nginx \
 		--modules-path=/usr/lib/nginx/modules \
