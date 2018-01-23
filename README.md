@@ -1,0 +1,1 @@
+Fancy Index with Nginx
