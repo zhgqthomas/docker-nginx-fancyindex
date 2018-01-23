@@ -2,7 +2,7 @@ FROM alpine:3.7
 
 LABEL maintainer="Thomas <zhgqthomas@gmail.com>"
 
-ENV NGINX_VERSION 1.13.8
+ENV NGINX_VERSION 1.0.10
 
 COPY ngx-fancyindex /ngx-fancyindex/
 COPY nginx.conf /etc/nginx/nginx.conf
